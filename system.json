@@ -1,0 +1,50 @@
+{
+  "id": "die-rpg",
+  "title": "DIE RPG",
+  "description": "The DIE RPG system for FoundryVTT!",
+  "version": "0.0.1",
+  "compatibility": {
+    "minimum": 11,
+    "verified": "11.315",
+    "maximum": 12
+  },
+  "authors": [
+    {
+      "name": "ephson",
+      "url": "https://github.com/philote",
+      "discord": "ephson",
+      "reddit": "u/ephson"
+    }
+  ],
+  "license": "LICENSE.txt",
+  "readme": "README.md",
+  "changelog": "CHANGELOG.md",
+  "media": [
+    {
+      "type": "setup",
+      "url": "systems/die-rpg/assets/package_image.webp",
+      "thumbnail": "systems/die-rpg/assets/package_image_thumb.webp"
+    }
+  ],
+  "esmodules": ["module/die-rpg.mjs"],
+  "styles": ["css/die-rpg.css"],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "packs": [],
+  "packFolders": [],
+  "socket": false,
+  "url": "Replace this with a link to your public repository",
+  "bugs": "Replace this with a link to file issues or tickets",
+  "manifest": "Replace this with a link to the /latest release system.json so people can receive updates after they've installed the system",
+  "download": "This must link to a .zip file of the current version",
+  "background": "systems/die-rpg/assets/package_image.webp",
+  "gridDistance": 5,
+  "gridUnits": "ft",
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": "power"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "die-rpg",
+  "version": "2.0.0",
+  "description": "CSS compiler for the DieRpg system",
+  "author": "Joseph Hopson",
+  "license": "MIT",
+  "private": true,
+  "browserslist": [
+    "last 3 versions"
+  ],
+  "scripts": {
+    "build": "sass src/scss/die-rpg.scss css/die-rpg.css --style=expanded --no-source-map",
+    "watch": "sass src/scss/die-rpg.scss css/die-rpg.css --style=expanded --source-map --watch",
+    "pushLDBtoJSON": "node ./tools/pushLDBtoJSON.mjs",
+    "pullJSONtoLDB": "node ./tools/pullJSONtoLDB.mjs"
+  },
+  "devDependencies": {
+    "@foundryvtt/foundryvtt-cli": "^1.0.2",
+    "sass": "^1.53.0"
+  }
+}
