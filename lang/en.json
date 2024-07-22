@@ -8,6 +8,20 @@
       "Wis": { "long": "Wisdom", "abbr": "wis" },
       "Cha": { "long": "Charisma", "abbr": "cha" }
     },
+    "Stat": {
+      "Str": { "long": "Strength", "abbr": "str" },
+      "Con": { "long": "Constitution", "abbr": "con" },
+      "Dex": { "long": "Dexterity", "abbr": "dex" },
+      "Int": { "long": "Intelligence", "abbr": "int" },
+      "Wis": { "long": "Wisdom", "abbr": "wis" },
+      "Cha": { "long": "Charisma", "abbr": "cha" }
+    },
+    "Resources": {
+      "gua": { "long": "Guard", "abbr": "gua" },
+      "hea": { "long": "Health", "abbr": "hea" },
+      "wil": { "long": "Willpower", "abbr": "wil" },
+      "def": { "long": "Defense", "abbr": "def" }
+    },
     "SheetLabels": {
       "Actor": "DieRpg Actor Sheet",
       "Item": "DieRpg Item Sheet"
@@ -24,6 +38,30 @@
       "Temporary": "Temporary Effects",
       "Passive": "Passive Effects",
       "Inactive": "Inactive Effects"
+    },
+    "NPCSheet": {
+      "Type": {
+        "Basic": {
+          "label": "Basic"
+        },
+        "Fallen": {
+          "label": "Fallen",
+          "Subtype": {
+            "Basic": "Basic", 
+            "Elite": "Elite",
+            "Assassin": "Assassin",
+            "Epic": "Epic"
+          }
+        },
+        "Paragon": {
+          "label": "Paragon",
+          "PowerLevel": {
+            "Basic": "Basic",
+            "Elite": "Elite",
+            "Hero": "Hero"
+          }
+        }
+      }
     }
   },
 

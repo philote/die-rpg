@@ -181,7 +181,7 @@ export class DieRpgActorSheet extends ActorSheet {
       onManageActiveEffect(ev, document);
     });
 
-    // Rollable abilities.
+    // Rollable stats.
     html.on('click', '.rollable', this._onRoll.bind(this));
 
     // Drag events for macros.
