@@ -1,3 +1,28 @@
+Rolls
+  Click stat roll the number of d6's = stat number
+  Pop-up before the roll
+    add class die?
+    number of advantages +1d6 per
+      Use a flashback to get 1 advantage? (once per session)
+    number of disadvantages -1d6 per
+      If 0 dice or less: 
+        roll 2 die and the lowest counts as the roll
+        can choose class die instead of one of the 2 d6s
+    set difficulty [0-2]
+    (Optional) set the number of successes needed [1-3] 
+  Roll
+  Chat message
+    show number of successes (any dice < 4)
+    remove number of success = difficulty
+      user chooses if there are more successes than difficulty [chat input]
+    (optional) FAILING FORWARD, If successes were rolled before being removed due to difficulty = a success with a cost, a partial success, or success with a complication
+    any successes remaining = succeed
+    any remaining successes that are 6+ = each can be used to activate a special (show specials?)
+    (optional) CRITICAL FAIL = no successes and at least one of the dice is a 1
+
+Would be nice if you could track collected disadvantages and advantages with their context on the character and NPC sheets
+
+
 Character
   Stats (0-4)
     str
