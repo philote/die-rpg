@@ -9,12 +9,12 @@
       "Cha": { "long": "Charisma", "abbr": "cha" }
     },
     "Stat": {
-      "Str": { "long": "Strength", "abbr": "str" },
-      "Con": { "long": "Constitution", "abbr": "con" },
-      "Dex": { "long": "Dexterity", "abbr": "dex" },
-      "Int": { "long": "Intelligence", "abbr": "int" },
-      "Wis": { "long": "Wisdom", "abbr": "wis" },
-      "Cha": { "long": "Charisma", "abbr": "cha" }
+      "Str": { "long": "Strength", "abbr": "Str" },
+      "Con": { "long": "Constitution", "abbr": "Con" },
+      "Dex": { "long": "Dexterity", "abbr": "Dex" },
+      "Int": { "long": "Intelligence", "abbr": "Int" },
+      "Wis": { "long": "Wisdom", "abbr": "Wis" },
+      "Cha": { "long": "Charisma", "abbr": "Cha" }
     },
     "Resources": {
       "gua": { "long": "Guard", "abbr": "gua" },

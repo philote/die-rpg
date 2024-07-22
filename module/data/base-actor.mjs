@@ -16,8 +16,12 @@ export default class DieRpgActorBase extends DieRpgDataModel {
         value: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
         max: new fields.NumberField({ ...requiredInteger, initial: 10 })
       }),
-      willpower: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
-      defense: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 })
+      willpower: new fields.SchemaField({
+        value: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
+      }),
+      defense: new fields.SchemaField({
+        value: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
+      }),
     });
     
     schema.biography = new fields.HTMLField({ required: true, blank: true }); // equivalent to passing ({initial: ""}) for StringFields
