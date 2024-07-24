@@ -10,7 +10,7 @@
       <div class="stats flexrow">
         {{#each system.stats as |stat key|}}
         <div class="stats flexcol flex-group-center">
-          <label for="system.stats.{{key}}.value" class="resource-label rollable flexlarge align-left" data-roll="d20+@stats.{{key}}.value" data-label="{{localize (lookup @root.config.stats key)}}">{{localize (lookup @root.config.statAbbreviations key)}}</label>
+          <label for="system.stats.{{key}}.value" class="resource-label stat-roll flexlarge align-left" data-stat-name="{{key}}" data-stat-name="{{localize (lookup @root.config.stats key)}}">{{localize (lookup @root.config.statAbbreviations key)}}</label>
           <input type="number" name="system.stats.{{key}}.value" value="{{stat.value}}" data-dtype="Number"/>
         </div>
         {{/each}}

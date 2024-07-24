@@ -2,6 +2,7 @@ import {
   onManageActiveEffect,
   prepareActiveEffectCategories,
 } from '../helpers/effects.mjs';
+import { rollStat } from "../helpers/dice.mjs";
 
 /**
  * Extend the basic ActorSheet with some very simple modifications
@@ -183,6 +184,7 @@ export class DieRpgActorSheet extends ActorSheet {
 
     // Rollable stats.
     html.on('click', '.rollable', this._onRoll.bind(this));
+    html.on('click', '.stat-roll', this._onStatRoll.bind(this));
 
     // Drag events for macros.
     if (this.actor.isOwner) {
@@ -243,14 +245,15 @@ export class DieRpgActorSheet extends ActorSheet {
 
     // Handle rolls that supply the formula directly.
     if (dataset.roll) {
-      let label = dataset.label ? `[ability] ${dataset.label}` : '';
-      let roll = new Roll(dataset.roll, this.actor.getRollData());
-      roll.toMessage({
-        speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-        flavor: label,
-        rollMode: game.settings.get('core', 'rollMode'),
-      });
-      return roll;
+      return rollStat(dataset, this.actor);
     }
+  }
+
+  _onStatRoll(event) {
+    event.preventDefault();
+    const element = event.currentTarget;
+    const dataset = element.dataset;
+
+    return rollStat(dataset, this.actor);
   }
 }
