@@ -1,10 +1,11 @@
-import DieRpgActorBase from "./base-actor.mjs";
+import DieRpgActorBase from './base-actor.mjs';
 
 export default class DieRpgNPC extends DieRpgActorBase {
+  static LOCALIZATION_PREFIXES = ['DIE_RPG.Actor.NPC'];
 
   static defineSchema() {
     const fields = foundry.data.fields;
-    const requiredInteger = { required: true, nullable: false, integer: true };
+    // const requiredInteger = { required: true, nullable: false, integer: true };
     const schema = super.defineSchema();
 
     schema.abilities = new fields.ArrayField(new fields.ObjectField());
@@ -17,10 +18,6 @@ export default class DieRpgNPC extends DieRpgActorBase {
       paragonPowerLevel: new fields.StringField({ required: true, blank: true }),
     });
 
-    return schema
+    return schema;
   }
-
-  // prepareDerivedData() {
-  //   this.xp = this.cr * this.cr * 100;
-  // }
 }

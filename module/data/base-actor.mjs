@@ -1,7 +1,4 @@
-import DieRpgDataModel from "./base-model.mjs";
-
-export default class DieRpgActorBase extends DieRpgDataModel {
-
+export default class DieRpgActorBase extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     const fields = foundry.data.fields;
     const requiredInteger = { required: true, nullable: false, integer: true };
@@ -48,7 +45,7 @@ export default class DieRpgActorBase extends DieRpgDataModel {
   getRollData() {
     const data = {};
 
-    // Copy the ability scores to the top level, so that rolls can use
+    // Copy the stat scores to the top level, so that rolls can use
     // formulas like `@str.value + 4`.
     if (this.stats) {
       for (let [k,v] of Object.entries(this.stats)) {

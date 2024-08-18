@@ -1,7 +1,29 @@
-$c-white: #fff;
-$c-black: #000;
+:root {
+  --die-rpg-c-dark: #191813;
+  --die-rpg-c-faint: #c9c7b8;
+  --die-rpg-c-beige: #b5b3a4;
+  --die-rpg-c-tan: #444444;
+  --die-rpg-c-white: #ffffff;
+  --die-rpg-c-black: #000000;
+  --die-rpg-c-groove: #eeede0;
+}
 
-$c-dark: #191813;
-$c-faint: #c9c7b8;
-$c-beige: #b5b3a4;
-$c-tan: #444;
+.theme-dark {
+  --die-rpg-c-dark: #c9c7b8;
+  --die-rpg-c-faint: #191813;
+  --die-rpg-c-beige: #444444;
+  --die-rpg-c-tan: #b5b3a4;
+  --die-rpg-c-white: #000000;
+  --die-rpg-c-black: #ffffff;
+  --die-rpg-c-groove: #11121f;
+}
+
+$c-white: var(--die-rpg-c-white);
+$c-black: var(--die-rpg-c-black);
+
+$c-dark: var(--die-rpg-c-dark);
+$c-faint: var(--die-rpg-c-faint);
+$c-beige: var(--die-rpg-c-beige);
+$c-tan: var(--die-rpg-c-tan);
+
+$c-groove: var(--die-rpg-c-groove);

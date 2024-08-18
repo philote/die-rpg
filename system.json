@@ -1,13 +1,7 @@
 {
   "id": "die-rpg",
-  "title": "DIE RPG",
-  "description": "The DIE RPG system for FoundryVTT!",
-  "version": "0.0.1",
-  "compatibility": {
-    "minimum": 12,
-    "verified": 12.328,
-    "max": 12
-  },
+  "title": "DIE: The Roleplaying Game",
+  "description": "The DIE: The Roleplaying Game system for FoundryVTT!",
   "authors": [
     {
       "name": "ephson",
@@ -16,8 +10,37 @@
       "reddit": "u/ephson"
     }
   ],
+  "documentTypes": {
+    "Actor": {
+        "character": {
+            "htmlFields": ["biography"]
+        },
+        "npc": {
+            "htmlFields": ["biography"]
+        }
+    },
+    "Item": {
+        "feature": {
+            "htmlFields": ["description"]
+        },
+        "gear": {
+            "htmlFields": ["description"]
+        },
+        "spell": {
+            "htmlFields": ["description"]
+        }
+    }
+  },
+  "flags": {
+    "hotReload": {
+      "extensions": ["css", "html", "hbs", "json"],
+      "paths": ["css", "lang", "templates"]
+    }
+  },
+  "url": "Replace this with a link to your public repository",
   "license": "LICENSE.txt",
   "readme": "README.md",
+  "bugs": "Replace this with a link to file issues or tickets",
   "changelog": "CHANGELOG.md",
   "media": [
     {
@@ -26,6 +49,12 @@
       "thumbnail": "systems/die-rpg/assets/package_image_thumb.webp"
     }
   ],
+  "version": "0.0.1",
+  "compatibility": {
+    "minimum": 12,
+    "verified": "12.330",
+    "maximum": 12
+  },
   "esmodules": ["module/die-rpg.mjs"],
   "styles": ["css/die-rpg.css"],
   "languages": [
@@ -35,27 +64,18 @@
       "path": "lang/en.json"
     }
   ],
-  "documentTypes": {
-    "Actor": {
-      "character": {},
-      "npc": {}
-    },
-    "Item": {
-      "item": {},
-      "feature": {},
-      "spell": {}
-    }
-  },
   "packs": [],
   "packFolders": [],
   "socket": false,
-  "url": "Replace this with a link to your public repository",
-  "bugs": "Replace this with a link to file issues or tickets",
   "manifest": "Replace this with a link to the /latest release system.json so people can receive updates after they've installed the system",
   "download": "This must link to a .zip file of the current version",
   "background": null,
-  "gridDistance": 5,
-  "gridUnits": "ft",
+  "grid": {
+    "type": 1,
+    "distance": 5,
+    "units": "ft",
+    "diagonals": 0
+  },
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": null
 }

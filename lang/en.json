@@ -1,13 +1,5 @@
 {
   "DIE_RPG": {
-    "Ability": {
-      "Str": { "long": "Strength", "abbr": "str" },
-      "Con": { "long": "Constitution", "abbr": "con" },
-      "Dex": { "long": "Dexterity", "abbr": "dex" },
-      "Int": { "long": "Intelligence", "abbr": "int" },
-      "Wis": { "long": "Wisdom", "abbr": "wis" },
-      "Cha": { "long": "Charisma", "abbr": "cha" }
-    },
     "Stat": {
       "Str": { "long": "Strength", "abbr": "Str" },
       "Con": { "long": "Constitution", "abbr": "Con" },
@@ -26,8 +18,53 @@
       "Actor": "DieRpg Actor Sheet",
       "Item": "DieRpg Item Sheet"
     },
+    "Actor": {
+      "Tabs": {
+        "Biography": "Biography",
+        "Features": "Features",
+        "Gear": "Gear",
+        "Spells": "Spells",
+        "Effects": "Effects"
+      },
+      "base": {
+        "FIELDS": {
+          "biography": {"label": "Biography"},
+          "health": {"label": "Health"},
+          "power": {"label": "Power"}
+        }
+      },
+      "Character": {
+        "FIELDS": {
+          "level": {"label": "Level"}
+        }
+      },
+      "NPC": {
+        "FIELDS": {
+          "cr": {"label": "CR"},
+          "xp": {"label": "XP"}
+        }
+      }
+    },
     "Item": {
+      "Tabs": {
+        "Attributes": "Attributes",
+        "Description": "Description",
+        "Effects": "Effects"
+      },
+      "Gear": {
+        "FIELDS": {
+          "rollFormula": {"label": "Roll Formula"},
+          "numDice": {"label": "Number of Dice"},
+          "dieSize": {"label": "Die Size"},
+          "rollMod": {"label": "Roll Modifier"},
+          "quantity": {"label": "Quantity"},
+          "weight": {"label": "Weight"}
+        }
+      },
       "Spell": {
+        "FIELDS": {
+          "level": {"label": "Spell Level"}
+        },
         "SpellLVL": "Level {level} Spells",
         "AddLVL": "Add LVL {level}"
       }
@@ -38,40 +75,15 @@
       "Temporary": "Temporary Effects",
       "Passive": "Passive Effects",
       "Inactive": "Inactive Effects"
-    },
-    "NPCSheet": {
-      "Type": {
-        "Basic": {
-          "label": "Basic"
-        },
-        "Fallen": {
-          "label": "Fallen",
-          "Subtype": {
-            "Basic": "Basic", 
-            "Elite": "Elite",
-            "Assassin": "Assassin",
-            "Epic": "Epic"
-          }
-        },
-        "Paragon": {
-          "label": "Paragon",
-          "PowerLevel": {
-            "Basic": "Basic",
-            "Elite": "Elite",
-            "Hero": "Hero"
-          }
-        }
-      }
     }
   },
-
   "TYPES": {
     "Actor": {
       "character": "Character",
       "npc": "NPC"
     },
     "Item": {
-      "item": "Item",
+      "gear": "Gear",
       "feature": "Feature",
       "spell": "Spell"
     }
