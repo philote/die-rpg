@@ -71,7 +71,7 @@
   "compatibility": {
     "minimum": 13,
     "verified": 13.351,
-    "maximum": 13
+    "maximum": 14
   },
   "esmodules": ["module/die-rpg.mjs"],
   "styles": ["css/die-rpg.css"],
